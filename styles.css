@@ -1,10 +1,28 @@
 /* Change the overall page font and background */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background: linear-gradient(120deg, #f4f4f9, #e8f3ff, #f3eaff, #f4f4f9);
+    background-size: 300% 300%;
+    animation: background-shift 18s ease-in-out infinite;
     color: #333;
     margin: 0;
     padding: 20px;
+}
+
+@keyframes background-shift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        background-position: 50% 50%;
+    }
 }
 
 /* Style the navigation links */
