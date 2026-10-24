@@ -17,7 +17,8 @@ body {
 }
 
 header,
-section {
+section,
+article {
     width: min(100%, 720px);
     box-sizing: border-box;
     padding: 24px;
@@ -48,6 +49,33 @@ nav a {
 nav a:hover {
     background: #303950;
     color: #ffffff;
+}
+
+.card-link {
+    display: inline-block;
+    padding: 14px 20px;
+    border: 1px solid #454c62;
+    border-radius: 8px;
+    background: #242a3a;
+    color: #c4d2ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    background: #303950;
+    color: #ffffff;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.post-date {
+    color: #b7bfd3;
+    font-size: 0.9rem;
 }
 
 @keyframes background-shift {
