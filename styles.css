@@ -1,0 +1,21 @@
+/* Change the overall page font and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style the navigation links */
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Add a hover effect to links */
+nav a:hover {
+    color: #0858a8;
+}
